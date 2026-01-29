@@ -105,8 +105,8 @@ Build for production:
 ## Links
 
 - **GitHub repository:** https://github.com/anirudhsai581/Dashboard-Assignment
-  **Live Demo:** https://anirudh-avm-digispace.netlify.app/  
-  **LinkedIn Profile:** https://www.linkedin.com/in/anirudh-sai-chava-66b399245
+- **Live Demo:** https://anirudh-avm-digispace.netlify.app/
+- **LinkedIn Profile:** https://www.linkedin.com/in/anirudh-sai-chava-66b399245
 
 ---
 
