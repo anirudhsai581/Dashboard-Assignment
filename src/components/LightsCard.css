@@ -1,0 +1,51 @@
+.lights-card {
+  position: relative;
+  overflow: hidden; /* Ensure glow doesn't spill out if using pseudo-element, though background-image is safer */
+  background: linear-gradient(90deg, #1c4e4f 0%, rgba(10, 20, 28, 0.95) 100%);
+}
+
+.lights-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.gauge-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gauge-value {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--color-teal);
+  z-index: 10;
+}
+
+.gauge-labels {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.gauge-label-left,
+.gauge-label-right {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+}

@@ -1,0 +1,48 @@
+.carbon-card {
+  position: relative;
+}
+
+.carbon-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.chart-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.carbon-center-value {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+  background: #c1c6c7;
+  border-radius: 50px;
+  width: 180px; /* Increased width for single line text */
+  height: 60px; /* Reduced height closer to text height */
+  display: flex;
+  flex-direction: row; /* Single line */
+  justify-content: center;
+  align-items: center; /* Vertically center items in the pill */
+  gap: 6px; /* Space between value and unit */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.carbon-value {
+  font-size: 24px; /* Slightly reduced to fit */
+  font-weight: 700;
+  color: var(--color-black);
+  line-height: 1;
+}
+
+.carbon-unit {
+  font-size: 12px;
+  font-weight: 600; /* Increased weight for visibility */
+  color: #555;
+  margin-top: 0;
+}

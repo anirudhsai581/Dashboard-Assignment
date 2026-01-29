@@ -1,0 +1,7 @@
+.footfall-card {
+  /* grid-column: span 2; Removed to make it 1 column */
+}
+
+.footfall-content {
+  margin-top: 16px;
+}
