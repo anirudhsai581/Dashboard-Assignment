@@ -1,5 +1,8 @@
 # DigiSpace Dashboard – Frontend Assignment
 
+**Live Demo:** https://anirudh-avm-digispace.netlify.app/  
+**LinkedIn Profile:** https://www.linkedin.com/in/anirudh-sai-chava-66b399245
+
 This repository contains a frontend implementation of the provided DigiSpace dashboard design. The goal was to recreate the UI as closely as possible with focus on layout accuracy, spacing, typography, and component structure.
 
 ---
@@ -102,7 +105,8 @@ Build for production:
 ## Links
 
 - **GitHub repository:** https://github.com/anirudhsai581/Dashboard-Assignment
-- **LinkedIn:** <YOUR_LINKEDIN_URL>
+  **Live Demo:** https://anirudh-avm-digispace.netlify.app/  
+  **LinkedIn Profile:** https://www.linkedin.com/in/anirudh-sai-chava-66b399245
 
 ---
 
