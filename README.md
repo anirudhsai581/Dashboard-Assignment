@@ -1,18 +1,113 @@
-# React + Vite
+# DigiSpace Dashboard – Frontend Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a frontend implementation of the provided DigiSpace dashboard design. The goal was to recreate the UI as closely as possible with focus on layout accuracy, spacing, typography, and component structure.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## React Compiler
+- React
+- Vite
+- Apache ECharts
+- JavaScript
+- CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Implementation details
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Each card in the design (Lights, Water Consumption, Carbon Intensity, Energy Consumption, Footfall, etc.) is implemented as a **separate React component**.
+- The layout is intentionally **not responsive**, per the assignment requirements.
 
-# Dashboard-Assignment
+### Fixed resolution used
+
+- **1920 × 1080 (Full HD)**
+
+All spacing, alignment, and sizing decisions are made with this resolution in mind.
+
+---
+
+## Design accuracy
+
+- Font families and color values are taken from the provided `colors_fonts.txt`.
+- Font weights were chosen to closely match the design.
+- Padding, margins, alignment, and font sizes are implemented to achieve visual parity where possible.
+- Provided icons are used where available; visually similar alternatives were chosen when an exact icon was not present.
+
+---
+
+## Charts
+
+All charts are implemented using **Apache ECharts**:
+
+- Gauge chart for Lights
+- Donut chart for Carbon Intensity
+- Bar chart for Energy Consumption
+- Area chart for Footfall
+
+Chart styling (colors, radii, gradients, axis visibility) has been adjusted to match the design closely.
+
+---
+
+## Assumptions and limitations
+
+- Exact numeric chart data was not provided; values are approximated from the design.
+- Minor visual differences may exist where exact parity was not technically possible using the available assets and libraries.
+- This is a static frontend implementation; no backend or real-time data integration is included.
+
+These deviations can be explained on request.
+
+---
+
+## Project structure (relevant files)
+
+src/
+├─ components/
+│ ├─ Sidebar.jsx
+│ ├─ LightsCard.jsx
+│ ├─ WaterConsumptionCard.jsx
+│ ├─ CarbonIntensityCard.jsx
+│ ├─ EnergyConsumptionCard.jsx
+│ └─ FootfallCard.jsx
+├─ assets/
+├─ App.jsx
+├─ main.jsx
+└─ index.css
+
+---
+
+## Setup
+
+Install dependencies:
+
+    npm install
+
+Run locally (development server):
+
+    npm run dev
+
+Build for production:
+
+    npm run build
+
+---
+
+## Deployment
+
+- The repository is suitable for deployment on static hosting platforms (Netlify, Vercel).
+- For Netlify: connect the GitHub repository and use the build command `npm run build` with the publish directory `dist`.
+
+---
+
+## Links
+
+- **GitHub repository:** https://github.com/anirudhsai581/Dashboard-Assignment
+- **LinkedIn:** <YOUR_LINKEDIN_URL>
+
+---
+
+## Notes
+
+This project is submitted as a UI implementation task. It focuses on pixel accuracy and componentization. Backend integration, authentication, and real-time feeds are out of scope for this submission.
+
+---
