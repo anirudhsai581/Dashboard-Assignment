@@ -85,12 +85,7 @@ Build for production:
 
 ---
 
-## Deployment
 
-- The repository is suitable for deployment on static hosting platforms (Netlify, Vercel).
-- For Netlify: connect the GitHub repository and use the build command `npm run build` with the publish directory `dist`.
-
----
 
 ## Links
 
