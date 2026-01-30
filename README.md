@@ -52,16 +52,6 @@ Chart styling (colors, radii, gradients, axis visibility) has been adjusted to m
 
 ---
 
-## Assumptions and limitations
-
-- Exact numeric chart data was not provided; values are approximated from the design.
-- Minor visual differences may exist where exact parity was not technically possible using the available assets and libraries.
-- This is a static frontend implementation; no backend or real-time data integration is included.
-
-These deviations can be explained on request.
-
----
-
 ## Project structure (relevant files)
 
 src/
